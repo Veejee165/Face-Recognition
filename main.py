@@ -2,9 +2,9 @@ import face_recognition
 import numpy
 import dlib
 import cv2.cv2 as cv2
-img1_raw = face_recognition.load_image_file('/Users/vedantgupta/PycharmProjects/pythonProject1/venv/imgs/IMG_1611.jpg')
+img1_raw = face_recognition.load_image_file('img')
 img1_raw = cv2.cvtColor(img1_raw, cv2.COLOR_BGR2RGB)
-img2_raw = face_recognition.load_image_file('/Users/vedantgupta/PycharmProjects/pythonProject1/venv/imgs/IMG_1610.jpg')
+img2_raw = face_recognition.load_image_file('img')
 img2_raw = cv2.cvtColor(img2_raw, cv2.COLOR_BGR2RGB)
 
 img1_raw=cv2.rotate(img1_raw, cv2.ROTATE_90_CLOCKWISE)
